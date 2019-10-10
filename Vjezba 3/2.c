@@ -26,7 +26,7 @@ int main(void){
 
     // Ne koristim M_PI jer ne zele u rjesenjima da bude precizno 
 
-    float V = r * r * r * 4.f/3 * PI;
+    float V = pow(r, 3) * 4.f/3 * PI;
 
     printf("Volumen kugle radijusa %.3f je %.3f\n", r, V);
     return 0;
