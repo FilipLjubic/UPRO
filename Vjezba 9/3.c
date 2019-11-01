@@ -26,11 +26,7 @@ int main(void){
         }
     }
     //pronalazenje najmanjeg u svakom stupcu
-
-    /*jedan for loop za prolazenje po redovima
-        jedan for loop za prolazenje po stupcima
-
-    */        
+           
     for(int i = 0; i < n; i++){
         //pronalazenje najmanjeg u svakom stupcu
         int najmanji = brojevi[0][i];
