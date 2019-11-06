@@ -1,0 +1,57 @@
+13.
+Napisati sadržaj registra u kojem je, prema IEEE 754 standardu za prikaz brojeva u standardnoj (single) preciznosti,
+ pohranjen broj -17.78125
+Sadržaj registra napisati u oktalnom i heksadekadskom obliku
+
+17 = 10001
+0.78125 = 0.5 + 0.25 + 0.03125
+
+== 10001.11001
+
+== 1.000111001 * 2^4
+
+K = 4 + 127 = 131 = 10000011
+==(0) 1 10000011 00011100 10000000 0000000
+
+Heksadekadski: C18E4000
+Oktalni: 30143440000
+
+
+14.
+U registru od 32 bita upisan je broj C2 B0 00 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float. 
+Rezultat napisati u dekadskom brojevnom sustavu.
+
+1 10000101 011 0000 0000 0000 0000 0000
+K = 128 + 4 + 1 = 133 => 133 - 127 = 6 (exp)
+M = 1011 0000...
+
+= M * 2^6 = 1011000
+= 2^6 + 2^4 + 2^3 = 64 + 16 + 8 = 88
+
+== -88
+
+15.
+U registru od 32 bita upisan je broj 43 00 20 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float. 
+Rezultat napisati u dekadskom brojevnom sustavu.
+
+0 10000110 000 0000 0010 0000 0000 0000
+K = 10000110 = 128 + 4 + 2 = 134 => 134 - 127 = (exp) 7
+M = 1.000 0000 0010 
+
+= M * 2^7 = 1000 0000.0010 
+== 128.125
+
+16.
+U registru od 32 bita upisan je broj 3 01 22 40 00 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float. 
+Rezultat napisati u dekadskom brojevnom sustavu.
+
+1 10000010 10 010 100 000 000 000 000 000
+M = 1.100101 00 000 000 000 000 000 
+K = 128 + 2 = 130 - 127 = 3
+
+= M * 2^3 = 1100.101 
+= 4 + 8 + 0.5 + 0.125
+== -12.625
