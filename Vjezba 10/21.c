@@ -9,7 +9,7 @@ Ispisati kvadrat učitanog broja n.
 
 
 int main(void){
-    unsigned long int n;
+    unsigned long long int n;
     
     printf("Upisite prirodni broj u granicama [1, 4250000000] > ");
     scanf("%llu", &n);
