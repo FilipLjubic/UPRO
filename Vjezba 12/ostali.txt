@@ -1,0 +1,60 @@
+k = 0 i m = 0, radi se o broju (+-)0
+k = 0 i m != 0, "denormalizirani broj"
+
+1.
+U registru od 32 bita upisan je broj 3 77 40 00 00 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float. 
+Rezultat napisati u dekadskom brojevnom sustavu.
+
+1 11111111 00 000 000 000 000 000 000 000
+
+k = 255
+m = 1.0 
+> beskonacnost
+== -inf
+
+2.
+U registru od 32 bita upisan je broj 7F C0 00 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float. 
+Rezultat napisati u dekadskom brojevnom sustavu.
+
+0 111 11111 100 0000 0000 0000 0000 0000
+
+k = 255
+m = 1.1
+NaN (not a number)
+
+3.
+U registru od 32 bita upisan je broj 80 00 00 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float. 
+Rezultat napisati u dekadskom brojevnom sustavu.
+
+1 00000000 000 0000 0000 0000 0000 0000
+k = 0
+p = 1
+m = 0
+
+== 0 (negativna)
+
+4.
+U registru od 32 bita upisan je broj 00 68 00 00. 
+Napisati koji je broj predstavljen u tom registru, ako registar služi za pohranu varijable tipa float.
+Rezultat napisati u dekadskom brojevnom sustavu
+
+0 00000000 1101 000 0000 0000 0000 0000
+K = 0
+m = 0.5 + 0.25 + 0.0625 = 0.8125
+
+5.
+U registru od 32 bita upisan je broj 80 00 00 01. 
+Napisati koji je broj predstavljen u tom registru (rezultat napisati u dekadskom obliku), ako registar služi za pohranu varijable:
+a) signed int i;
+b) unsigned int j;
+c) float x;
+
+1 00000000 000 0000 0000 0000 0000 0001
+
+k = 0
+m = 2^-23
+signed 5.9 10^-8
+unsigned 
