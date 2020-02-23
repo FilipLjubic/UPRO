@@ -1,0 +1,58 @@
+ZA ZAPAMTIT:
+- prefiksalne operacije imaju isti prioritet kao prikazivanje valuea pointera
+- sufiksalne imaju veci prioritet
+- ako imaju isti prioritet ide s desna na lijevo
+- zagrade imaju najveci prioritet
+
+1.
+p1 = 2
+p2 = 23
+2 23
+11 22
+
+20 21
+NIJE 20 NEGO JE 5, NE MNOZI SE S VELICINOM INTA
+
+2.
+p1 = 11
+p2 = 47
+p3 = 67
+
+11 47
+31 14
+
+1 4
+KRIVO ISCITAO p3
+TREBA BITI 4 20
+
+3.
+p = 2
+2 2 51 59
+
+4.
+2 3
+p = 11 na kraju
+
+p = 3
+i1 = 4
+i2 = 11
+
+p = 31
+i1 = (--p) pa ++(*p), dakle 30
+p = 59
+i2 = prvo (p--) što miče p na 51 nakon komande, onda ++*p = 60
+30 60 
+
+5.
+(pp++ promjeni pp nakon funkcije u 11)
+f(pp++, 2) printa 23
+f(pp, 2) printa 29 sad jer je pp bio promjenjen u 11
+f(++pp, 2) promjeni pp u 23, pa se u funkciji printa 31
+
+6.
+p = 2
+p = 3
+
+p + 3 = 6 mjesto, tj -2
+p - -2 = 8. mjesto, tj. 5
+p = 5
